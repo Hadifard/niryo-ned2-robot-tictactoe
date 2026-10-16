@@ -34,8 +34,7 @@
 12. [Simulation environment and how the board was built](#12-simulation-environment-and-how-the-board-was-built)
 13. [Video library](#13-video-library)
 14. [Troubleshooting for students](#14-troubleshooting-for-students)
-15. [Honest limitations: what was tested, and what was not](#15-honest-limitations-what-was-tested-and-what-was-not)
-16. [Ideas for your own extensions](#16-ideas-for-your-own-extensions)
+15. [Ideas for your own extensions](#15-ideas-for-your-own-extensions)
 
 ---
 
@@ -71,8 +70,8 @@ survive reality:
 
 ```bash
 # 1) get the code
-git clone https://github.com/Hadifard/niryo2-robot-tictactoe.git
-cd niryo2-robot-tictactoe/niryo_tictactoe
+git clone https://github.com/Hadifard/niryo-ned2-robot-tictactoe.git
+cd niryo-ned2-robot-tictactoe/niryo_tictactoe
 
 # 2) (recommended) a clean Python environment
 python -m venv .venv
@@ -158,7 +157,7 @@ then the final CNC-milled board for the two-robot game:
 ## 4. Map of the repository: what every file does
 
 ```
-niryo2-robot-tictactoe/
+niryo-ned2-robot-tictactoe/
 ├── README.md                      <- you are here
 ├── requirements.txt               <- pip install -r requirements.txt
 ├── docs/
@@ -774,23 +773,23 @@ Software simulation (no CAD needed): `python main.py demo` — see [section 2](#
 
 ## 13. Video library
 
-The recordings are attached to the **[v1.0.0 release](https://github.com/Hadifard/niryo2-robot-tictactoe/releases/tag/v1.0.0)** (kept out of the repository to keep cloning fast).
+The recordings are attached to the **[v1.0.0 release](https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/tag/v1.0.0)** (kept out of the repository to keep cloning fast).
 
 | Video | What it shows |
 |---|---|
-| [**Computer_Vision_Robotics_216s_square_EN.mp4**](https://github.com/Hadifard/niryo2-robot-tictactoe/releases/download/v1.0.0/Computer_Vision_Robotics_216s_square_EN.mp4) | ★ 3.5-minute explainer film of the whole project (English subtitles: `video_production/subtitles_EN.srt`) |
-| [Final.video.of.playing.robots…expo.mp4](https://github.com/Hadifard/niryo2-robot-tictactoe/releases/download/v1.0.0/Final.video.of.playing.robots.with.each.other.before.expo.mp4) | robot vs robot, final test before the expo |
-| [11_VID-20241024-WA0001…Trim.mp4](https://github.com/Hadifard/niryo2-robot-tictactoe/releases/download/v1.0.0/11_VID-20241024-WA0001.-original.-.Trim.mp4) | robots playing in the lab (close-up) |
-| [07_.mp4](https://github.com/Hadifard/niryo2-robot-tictactoe/releases/download/v1.0.0/07_.mp4) | robot vs human on the paper board, 2 minutes |
-| [12_simulation.in.vitual.environment_01.mp4](https://github.com/Hadifard/niryo2-robot-tictactoe/releases/download/v1.0.0/12_simulation.in.vitual.environment_01.mp4) | SolidWorks motion study |
-| [08_Drawing.and.design…CAD.softwares.mp4](https://github.com/Hadifard/niryo2-robot-tictactoe/releases/download/v1.0.0/08_Drawing.and.design.playing.ground.by.CAD.softwares.mp4) | board design in CAD |
-| [making.playing.ground.via.CNC…mp4](https://github.com/Hadifard/niryo2-robot-tictactoe/releases/download/v1.0.0/making.playing.ground.via.CNC.mill.turn.machine.mp4) | making the board |
-| [01_working.on.codes.in.lab.mp4](https://github.com/Hadifard/niryo2-robot-tictactoe/releases/download/v1.0.0/01_working.on.codes.in.lab.mp4) | coding in the lab |
-| [02_working.on.color.detection.mp4](https://github.com/Hadifard/niryo2-robot-tictactoe/releases/download/v1.0.0/02_working.on.color.detection.mp4), [Tic.Tac.Toe.Color.Detection….mp4](https://github.com/Hadifard/niryo2-robot-tictactoe/releases/download/v1.0.0/Tic.Tac.Toe.Color.Detection.2024-10-23.22-02-02-1.mp4) | colour detection development |
-| [04_test.color.detection…lab.mp4](https://github.com/Hadifard/niryo2-robot-tictactoe/releases/download/v1.0.0/04_test.color.detection.of.codes.on.robot.in.lab.mp4) | colour detection test on the robot |
-| [03_working.on.segmentation…mp4](https://github.com/Hadifard/niryo2-robot-tictactoe/releases/download/v1.0.0/03_working.on.segmentation.codes_compressed.1.mp4), [05_test.of.segmentation…mp4](https://github.com/Hadifard/niryo2-robot-tictactoe/releases/download/v1.0.0/05_test.of.segmentation.codes.on.robot.in.lab_compressed.mp4) | segmentation development and test |
-| [06_working.on.codes.in.lab…mp4](https://github.com/Hadifard/niryo2-robot-tictactoe/releases/download/v1.0.0/06_working.on.codes.in.lab._01_origin_compressed.mp4) | more lab work |
-| [depth_estimation_robot_vision.mp4](https://github.com/Hadifard/niryo2-robot-tictactoe/releases/download/v1.0.0/depth_estimation_robot_vision.mp4) | depth heat map beside the original image |
+| [**Computer_Vision_Robotics_216s_square_EN.mp4**](https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/download/v1.0.0/Computer_Vision_Robotics_216s_square_EN.mp4) | ★ 3.5-minute explainer film of the whole project (English subtitles: `video_production/subtitles_EN.srt`) |
+| [Final.video.of.playing.robots…expo.mp4](https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/download/v1.0.0/Final.video.of.playing.robots.with.each.other.before.expo.mp4) | robot vs robot, final test before the expo |
+| [11_VID-20241024-WA0001…Trim.mp4](https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/download/v1.0.0/11_VID-20241024-WA0001.-original.-.Trim.mp4) | robots playing in the lab (close-up) |
+| [07_.mp4](https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/download/v1.0.0/07_.mp4) | robot vs human on the paper board, 2 minutes |
+| [12_simulation.in.vitual.environment_01.mp4](https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/download/v1.0.0/12_simulation.in.vitual.environment_01.mp4) | SolidWorks motion study |
+| [08_Drawing.and.design…CAD.softwares.mp4](https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/download/v1.0.0/08_Drawing.and.design.playing.ground.by.CAD.softwares.mp4) | board design in CAD |
+| [making.playing.ground.via.CNC…mp4](https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/download/v1.0.0/making.playing.ground.via.CNC.mill.turn.machine.mp4) | making the board |
+| [01_working.on.codes.in.lab.mp4](https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/download/v1.0.0/01_working.on.codes.in.lab.mp4) | coding in the lab |
+| [02_working.on.color.detection.mp4](https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/download/v1.0.0/02_working.on.color.detection.mp4), [Tic.Tac.Toe.Color.Detection….mp4](https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/download/v1.0.0/Tic.Tac.Toe.Color.Detection.2024-10-23.22-02-02-1.mp4) | colour detection development |
+| [04_test.color.detection…lab.mp4](https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/download/v1.0.0/04_test.color.detection.of.codes.on.robot.in.lab.mp4) | colour detection test on the robot |
+| [03_working.on.segmentation…mp4](https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/download/v1.0.0/03_working.on.segmentation.codes_compressed.1.mp4), [05_test.of.segmentation…mp4](https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/download/v1.0.0/05_test.of.segmentation.codes.on.robot.in.lab_compressed.mp4) | segmentation development and test |
+| [06_working.on.codes.in.lab…mp4](https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/download/v1.0.0/06_working.on.codes.in.lab._01_origin_compressed.mp4) | more lab work |
+| [depth_estimation_robot_vision.mp4](https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/download/v1.0.0/depth_estimation_robot_vision.mp4) | depth heat map beside the original image |
 
 **Frames from the explainer film** (one per topic):
 
@@ -823,7 +822,6 @@ The recordings are attached to the **[v1.0.0 release](https://github.com/Hadifar
 | Windows: OpenCV window does not appear | `pip install opencv-python` (not `-headless`) |
 
 ---
-
 
 ## 15. Ideas for your own extensions
 
