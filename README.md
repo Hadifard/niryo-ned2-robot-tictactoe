@@ -824,25 +824,8 @@ The recordings are attached to the **[v1.0.0 release](https://github.com/Hadifar
 
 ---
 
-## 15. Honest limitations: what was tested, and what was not
 
-**Tested without hardware** (`tests/`): game rules and agents; similarity transform; circle detection for any rotation/shift/lighting; all three vision variants on synthetic frames; classical segmentation (touching chips); depth and path-learning models; image-difference tracking; a **complete game** with simulated human, simulated camera and mock robot.
-
-**Run on the original lab footage:** the variant-2 circle detection and the segmentation. The picture below shows the project's own vision code on a hand-held phone video of the paper board.
-
-![vision on real footage](docs/images/real/vision_on_real_footage.jpg)
-
-It finds the two circles in several frames, but the 2-point model assumes a camera looking (almost) straight down, as the robot's wrist camera does at `OBSERVE_POSE`. With a strongly oblique hand-held camera the cell positions drift, and when the arm hides a circle the estimate fails. This is why the robot-mounted camera at a fixed observation pose is used in the real game.
-
-**Not verified on a real robot in this clean-up:** the new motion code (`robot_control.py`/`trajectory.py`), the hand-eye calibration tool, and the default paper layout (`BoardLayout`, millimetres) follow the original lab notebooks but must be **checked and adjusted on your real setup** — use slow speeds for the first runs.
-
-**Standalone modules:** the learned-path planner, depth model and diff-tracker are validated in simulation but are not (yet) called by the shipped game loop ([section 9.2](#92-retrain-it-yourself)).
-
-**Benchmarks** in this README use synthetic frames and a software simulator on one CPU; the real world is harder.
-
----
-
-## 16. Ideas for your own extensions
+## 15. Ideas for your own extensions
 
 1. **Wire in the learned planner:** replace `ArmController.travel` by `PathLearner.plan` waypoints and test with a chip as obstacle.
 2. **Use the depth model online:** fit `DepthModel` on the first passes, then use it to set `PICK_Z` automatically.
