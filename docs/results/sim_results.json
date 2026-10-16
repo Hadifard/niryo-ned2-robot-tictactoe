@@ -1,0 +1,64 @@
+{
+  "games": {
+    "vs Random": {
+      "win": 865,
+      "draw": 135,
+      "loss": 0,
+      "games": 1000
+    },
+    "vs Hybrid (2 smart moves, then random)": {
+      "win": 744,
+      "draw": 256,
+      "loss": 0,
+      "games": 1000
+    },
+    "vs Minimax": {
+      "win": 0,
+      "draw": 1000,
+      "loss": 0,
+      "games": 1000
+    },
+    "Random vs Random (reference)": {
+      "win": 406,
+      "draw": 142,
+      "loss": 452,
+      "games": 1000
+    }
+  },
+  "search": {
+    "nodes_plain": 549946,
+    "nodes_alphabeta": 20866,
+    "reduction": 26.356081663950924,
+    "first_move_ms": 53.927623999925345
+  },
+  "depth": {
+    "f_px": 800.0,
+    "chip_mm": 30,
+    "calibration_passes": 4,
+    "fit_rms_mm": 3.2712692249080235,
+    "mean_abs_err_mm": 2.6346279912407757,
+    "max_abs_err_mm": 9.27491486974441,
+    "a": 23.567272287854383,
+    "b": 0.0050887340487018
+  },
+  "path_learning": {
+    "train_trials": 150,
+    "test_transfers": 300,
+    "r2": 0.92307140924789,
+    "mae_mm": 4.514119561240074,
+    "collision_free_plan_pct": 99.33333333333333,
+    "collision_free_direct_prediction_pct": 80.0,
+    "replanned_pct": 20.0,
+    "collision_free_fixed_max_lift_pct": 95.66666666666667,
+    "mean_len_plan_mm": 249.49928290513418,
+    "mean_len_exhaustive_best_mm": 258.5015903300382,
+    "mean_len_fixed_max_lift_mm": 360.6397350413316,
+    "length_saving_vs_fixed_pct": 30.817583681803683,
+    "detour_demo": {
+      "lateral_mm": 54.99999999999999,
+      "lift_mm": 0.0,
+      "length_mm": 235.04806865324412,
+      "straight_mm": 200.0
+    }
+  }
+}

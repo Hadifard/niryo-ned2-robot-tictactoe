@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+demo_output/
+corrections.json
+hand_eye.json
+models/
+.venv/

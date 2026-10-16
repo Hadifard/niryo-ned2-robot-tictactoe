@@ -1,0 +1,135 @@
+{
+  "reference (nominal pose, normal light)": {
+    "v1": {
+      "cell_accuracy": 100.0,
+      "exact_board_pct": 100.0
+    },
+    "v2": {
+      "cell_accuracy": 100.0,
+      "exact_board_pct": 100.0
+    },
+    "v3": {
+      "cell_accuracy": 100.0,
+      "exact_board_pct": 100.0
+    }
+  },
+  "rotated 30 deg": {
+    "v1": {
+      "cell_accuracy": 61.66666666666667,
+      "exact_board_pct": 0.0
+    },
+    "v2": {
+      "cell_accuracy": 100.0,
+      "exact_board_pct": 100.0
+    },
+    "v3": {
+      "cell_accuracy": 100.0,
+      "exact_board_pct": 100.0
+    }
+  },
+  "rotated 150 deg + shifted": {
+    "v1": {
+      "cell_accuracy": 48.88888888888889,
+      "exact_board_pct": 0.0
+    },
+    "v2": {
+      "cell_accuracy": 100.0,
+      "exact_board_pct": 100.0
+    },
+    "v3": {
+      "cell_accuracy": 100.0,
+      "exact_board_pct": 100.0
+    }
+  },
+  "dim light (gain 0.5)": {
+    "v1": {
+      "cell_accuracy": 100.0,
+      "exact_board_pct": 100.0
+    },
+    "v2": {
+      "cell_accuracy": 100.0,
+      "exact_board_pct": 100.0
+    },
+    "v3": {
+      "cell_accuracy": 100.0,
+      "exact_board_pct": 100.0
+    }
+  },
+  "very dim (gain 0.35)": {
+    "v1": {
+      "cell_accuracy": 100.0,
+      "exact_board_pct": 100.0
+    },
+    "v2": {
+      "cell_accuracy": 100.0,
+      "exact_board_pct": 100.0
+    },
+    "v3": {
+      "cell_accuracy": 100.0,
+      "exact_board_pct": 100.0
+    }
+  },
+  "warm colour cast": {
+    "v1": {
+      "cell_accuracy": 100.0,
+      "exact_board_pct": 100.0
+    },
+    "v2": {
+      "cell_accuracy": 100.0,
+      "exact_board_pct": 100.0
+    },
+    "v3": {
+      "cell_accuracy": 100.0,
+      "exact_board_pct": 100.0
+    }
+  },
+  "cold colour cast": {
+    "v1": {
+      "cell_accuracy": 100.0,
+      "exact_board_pct": 100.0
+    },
+    "v2": {
+      "cell_accuracy": 100.0,
+      "exact_board_pct": 100.0
+    },
+    "v3": {
+      "cell_accuracy": 100.0,
+      "exact_board_pct": 100.0
+    }
+  },
+  "shadow band": {
+    "v1": {
+      "cell_accuracy": 100.0,
+      "exact_board_pct": 100.0
+    },
+    "v2": {
+      "cell_accuracy": 100.0,
+      "exact_board_pct": 100.0
+    },
+    "v3": {
+      "cell_accuracy": 100.0,
+      "exact_board_pct": 100.0
+    }
+  },
+  "combined: rot 40, shift, dim cast, shadow": {
+    "v1": {
+      "cell_accuracy": 58.333333333333336,
+      "exact_board_pct": 0.0
+    },
+    "v2": {
+      "cell_accuracy": 100.0,
+      "exact_board_pct": 100.0
+    },
+    "v3": {
+      "cell_accuracy": 100.0,
+      "exact_board_pct": 100.0
+    }
+  },
+  "timing_ms": {
+    "v1 read_once (fixed pixels)": 11.680903500064233,
+    "v2 observe (two circles + 9 cells + 10 trays)": 13.509906999843224,
+    "v3 observe (rectify + Lab background subtraction)": 47.02417049975338,
+    "classical segmentation (HSV + watershed)": 20.38537799990081
+  },
+  "n_boards_per_condition": 20
+}

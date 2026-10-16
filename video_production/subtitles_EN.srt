@@ -1,0 +1,176 @@
+1
+00:00:00,500 --> 00:00:02,600
+Computer vision & Robotics.
+
+2
+00:00:02,799 --> 00:00:05,799
+A Tic-Tac-Toe system built under real-world constraints.
+
+3
+00:00:06,400 --> 00:00:09,800
+Actuation error: gear backlash and limited repeatability create millimetre-scale pose errors that vision must correct.
+
+4
+00:00:10,000 --> 00:00:13,199
+Illumination changes with daylight and lamps, so fixed colour thresholds are not photometrically invariant.
+
+5
+00:00:13,400 --> 00:00:16,600
+The wrist camera is low grade: noisy, compressed and lens-distorted.
+
+6
+00:00:16,800 --> 00:00:21,600
+Three-year-old deep detectors and segmenters were heavy, and they lowered the control rate on a laptop CPU.
+
+7
+00:00:22,399 --> 00:00:26,399
+Colour is classified in HSV, where brightness is separated from hue and saturation.
+
+8
+00:00:26,600 --> 00:00:30,600
+Each cell is a circular region: every pixel votes, which is more stable than averaging.
+
+9
+00:00:30,800 --> 00:00:35,000
+White-patch balancing and CLAHE reduce the effect of changing illumination.
+
+10
+00:00:35,200 --> 00:00:39,600
+The hue ranges were measured on the real chips under laboratory lighting.
+
+11
+00:00:40,399 --> 00:00:46,200
+To detect chips in dim, over-exposed or specially lit rooms, where camera colours are unreliable, we chose the image subtraction method.
+
+12
+00:00:46,399 --> 00:00:52,399
+Twice per second the robot photographs the board and subtracts consecutive images; what remains is the new or moved chip.
+
+13
+00:00:52,600 --> 00:00:58,600
+The centre of that region is added to the list of known chip positions, or it updates the position of a chip that has moved.
+
+14
+00:00:58,799 --> 00:01:05,000
+Colours are not detected at all: the robot follows every chip from the start of the game and labels the opponent's chips itself.
+
+15
+00:01:05,200 --> 00:01:09,599
+Seat play of about 5 mm makes the difference image noisy, so the largest closed area and its centroid are used.
+
+16
+00:01:10,400 --> 00:01:15,400
+Calibration uses fiducial circles on the paper as references.
+
+17
+00:01:15,599 --> 00:01:20,599
+Two points define a similarity transform in closed form: rotation, scale and translation.
+
+18
+00:01:20,799 --> 00:01:25,400
+The grid, chip trays and token spots follow the paper wherever it lies.
+
+19
+00:01:25,599 --> 00:01:29,599
+A hand-eye step maps pixels to robot coordinates for a downward-looking camera.
+
+20
+00:01:30,400 --> 00:01:35,599
+Segmentation test on a laptop camera with a COCO-trained deep network.
+
+21
+00:01:35,799 --> 00:01:41,000
+It labels chairs and animals but knows nothing about our chips, and needs a GPU for real time.
+
+22
+00:01:41,200 --> 00:01:46,200
+The classical alternative: HSV masks, distance transform and watershed give one mask per chip.
+
+23
+00:01:46,400 --> 00:01:49,599
+About 60 ms per frame on a single CPU core, even when chips touch.
+
+24
+00:01:50,400 --> 00:01:55,400
+Depth estimation: a network such as Depth Anything V2 gives relative depth, shown as a heat map beside the original image.
+
+25
+00:01:55,599 --> 00:02:00,599
+For metric distance the chip diameter is the ruler: Z equals focal length times diameter divided by the apparent diameter.
+
+26
+00:02:00,799 --> 00:02:05,000
+To avoid hitting chips, the board or the other arm, the robot keeps a safe clearance; it is measured only in the first passes.
+
+27
+00:02:05,200 --> 00:02:07,599
+Then the model has learned the distances and moves without re-measuring.
+
+28
+00:02:08,400 --> 00:02:14,000
+Paths are learned: the robot tries lift heights on simulated transfers and keeps the shortest collision-free one.
+
+29
+00:02:14,199 --> 00:02:19,400
+A regression then predicts the lift from distance and obstacle height for every new transfer.
+
+30
+00:02:19,599 --> 00:02:26,000
+In 3-D the arc is parabolic in height and can bend sideways; the tool descends vertically onto the chip.
+
+31
+00:02:26,199 --> 00:02:32,000
+It picks a chip from its tray, places it on the target cell and then moves to the red chip.
+
+32
+00:02:32,199 --> 00:02:38,500
+If an obstacle suddenly blocks the path, a lateral detour is searched and the move continues.
+
+33
+00:02:38,699 --> 00:02:43,599
+The same idea applies to grasp-success prediction, anomaly detection for moved chips and per-lamp colour models.
+
+34
+00:02:44,400 --> 00:02:49,400
+In dim light detection becomes unreliable, so positions were taught by hand.
+
+35
+00:02:49,599 --> 00:02:55,599
+The arm is guided in learning mode, each pose is read and stored, and the code replays the table.
+
+36
+00:02:56,400 --> 00:03:01,800
+To avoid collisions, the waiting robot folds into a rest pose that the other arm cannot reach.
+
+37
+00:03:02,000 --> 00:03:06,599
+Its camera watches only the red token region and starts when the token appears.
+
+38
+00:03:06,800 --> 00:03:09,599
+A fixed observation point gives every board reading the same viewpoint.
+
+39
+00:03:10,400 --> 00:03:14,800
+Decision: alpha-beta minimax never loses and prefers faster wins.
+
+40
+00:03:15,000 --> 00:03:19,599
+A move is accepted only after the vision output is verified against the expected board.
+
+41
+00:03:20,400 --> 00:03:24,000
+Everything was first validated in a SolidWorks motion study.
+
+42
+00:03:24,199 --> 00:03:27,599
+Then the board was designed, built from wood and painted.
+
+43
+00:03:28,400 --> 00:03:32,000
+Hadi Sarhangi Fard, AI Engineer / Mechanical Engineer.
+
+44
+00:03:32,199 --> 00:03:35,599
+Computer vision & Robotics. Code and contact on GitHub and LinkedIn.
+

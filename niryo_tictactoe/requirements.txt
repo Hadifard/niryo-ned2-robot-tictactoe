@@ -1,0 +1,8 @@
+opencv-python>=4.5
+numpy
+matplotlib
+pillow
+pyniryo>=1.1
+pyniryo2
+# optional (segmentation/yolo_seg_demo.py):
+# ultralytics
