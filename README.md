@@ -44,6 +44,11 @@ Two **Niryo Ned2** robot arms stand at the two ends of a Tic-Tac-Toe board. Each
 program, its own wrist camera and its own coloured chips (green or blue). **They never talk to each other
 over a network.** They coordinate only through what the cameras can see: a **red turn token** that
 is carried from one side to the other. The same code also lets a **human** play against a robot.
+Robot vs. Robot Tic-Tac-Toe is an advanced open-source robotics project powered by Niryo Ned2 6-axis arms, 
+robust computer vision, and an unbeatable Alpha-Beta Minimax decision-making engine. By seamlessly bridging 
+real-time visual perception, precise motion planning, and physical execution, this project transforms a 
+classic game into a comprehensive, fault-tolerant engineering pipeline where machines sense, adapt, 
+and never lose.   
 
 ![what the film shows](docs/images/film/film_challenge.jpg)
 
