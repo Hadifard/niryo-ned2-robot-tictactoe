@@ -51,7 +51,7 @@ real-time visual perception, precise motion planning, and physical execution, th
 classic game into a comprehensive, fault-tolerant engineering pipeline where machines sense, adapt, 
 and never lose.   
 
-![what the film shows](docs/images/film/film_challenge.jpg)
+![what the film shows](docs/images/film/final_movie_cover.jpg)
 
 The game rules are the easy part (a perfect alpha-beta minimax player is 40 lines). The real work was making this
 survive reality:
