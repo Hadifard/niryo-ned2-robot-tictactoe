@@ -107,7 +107,6 @@ overlay shows the detected circles A/B, the 9 cells, the chip trays and the red 
 <img src="docs/media/sim_demo_game.gif" width="460" alt="Animated simulated game">
 </div>
 
-![six steps of the simulated game](docs/images/sim_demo_montage.jpg)
 
 Try `python main.py demo --rot 140 --seed 5` — a different rotation and a different (random) human opponent.
 Results are written to `demo_output/` (ignored by git).
