@@ -52,7 +52,9 @@ classic game into a comprehensive, fault-tolerant engineering pipeline where mac
 and never lose.   
 
 ![what the film shows](docs/images/film/final_movie_cover.jpg)
-
+<div align="center">
+<img src="docs/images/film/final_movie_cover.jpg">
+</div>
 The game rules are the easy part (a perfect alpha-beta minimax player is 40 lines). The real work was making this
 survive reality:
 
