@@ -51,7 +51,7 @@ real-time visual perception, precise motion planning, and physical execution, th
 classic game into a comprehensive, fault-tolerant engineering pipeline where machines sense, adapt, 
 and never lose.   
 
-![what the film shows](docs/images/film/final_movie_cover.jpg)
+![what the film shows]
 <div align="center">
 <img src="docs/images/film/final_movie_cover.jpg">
 </div>
