@@ -52,11 +52,7 @@ classic game into a comprehensive, fault-tolerant engineering pipeline where mac
 and never lose.   
 
 
-<div align="center">
-  
-  <img src="https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/download/v1.0.0/Final_Movie_Small.gif" width="500" alt="demo of project">
-
-</div>
+<img src="https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/download/v1.0.0/Final_Movie_Small.gif" width="500" alt="demo of project">
 
 
 The game rules are the easy part (a perfect alpha-beta minimax player is 40 lines). The real work was making this
