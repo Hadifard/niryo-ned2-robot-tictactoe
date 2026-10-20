@@ -59,6 +59,13 @@ and never lose.
 </div>
 
 
+<div align="center">
+  <a href="https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/download/v1.0.0/Final_Movie.mp4">
+    <img src="docs/images/film/final_movie_cover.jpg" alt="Robot vs Robot Tic-Tac-Toe Video" width="100%">
+  </a>
+</div>
+
+
 The game rules are the easy part (a perfect alpha-beta minimax player is 40 lines). The real work was making this
 survive reality:
 
