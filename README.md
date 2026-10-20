@@ -52,6 +52,7 @@ classic game into a comprehensive, fault-tolerant engineering pipeline where mac
 and never lose.   
 
 <div align="center">
+<video src="https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/download/v1.0.0/Final_Movie.mp4" controls width="100%"></video>
 <img src="docs/images/film/final_movie_cover.jpg">
 </div>
 
