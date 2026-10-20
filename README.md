@@ -51,7 +51,7 @@ real-time visual perception, precise motion planning, and physical execution, th
 classic game into a comprehensive, fault-tolerant engineering pipeline where machines sense, adapt, 
 and never lose.   
 
-
+<img src="https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/download/v1.0.0/Final_Movie_Small.gif" width="500" alt="demo of project">
 <div align="center">
   <a href="https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/download/v1.0.0/Final_Movie_Small.gif">
     <img src="docs/images/film/final_movie_cover.jpg" alt="Robot vs Robot Tic-Tac-Toe Video" width="50%">
