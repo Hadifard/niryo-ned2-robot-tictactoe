@@ -51,9 +51,9 @@ real-time visual perception, precise motion planning, and physical execution, th
 classic game into a comprehensive, fault-tolerant engineering pipeline where machines sense, adapt, 
 and never lose.   
 
-
+<div align="center">
 <img src="https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/download/v1.0.0/Final_Movie_Small.gif" width="500" alt="demo of project">
-
+</div>
 
 The game rules are the easy part (a perfect alpha-beta minimax player is 40 lines). The real work was making this
 survive reality:
