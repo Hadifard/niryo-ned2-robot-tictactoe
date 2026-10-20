@@ -54,7 +54,7 @@ and never lose.
 
 <div align="center">
 <img src="docs/images/film/final_movie_cover.jpg">
-<video src="https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/download/v1.0.0/Final_Movie_Small.mp4" controls width="100%"></video>
+<video src="https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/download/v1.0.0/Final_Movie_Small.mp4" controls width="50%"></video>
 
 </div>
 
