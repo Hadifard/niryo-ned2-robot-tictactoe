@@ -53,7 +53,7 @@ and never lose.
 
 
 <div align="center">
-  <a href="https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/download/v1.0.0/Final_Movie.mp4">
+  <a href="https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/download/v1.0.0/Final_Movie_Small.gif">
     <img src="docs/images/film/final_movie_cover.jpg" alt="Robot vs Robot Tic-Tac-Toe Video" width="50%">
   </a>
 </div>
