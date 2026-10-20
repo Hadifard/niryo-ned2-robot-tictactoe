@@ -51,8 +51,10 @@ real-time visual perception, precise motion planning, and physical execution, th
 classic game into a comprehensive, fault-tolerant engineering pipeline where machines sense, adapt, 
 and never lose.   
 
-<div align="center">
+
 <video src="https://github.com/Hadifard/niryo-ned2-robot-tictactoe/releases/download/v1.0.0/Final_Movie.mp4" controls width="100%"></video>
+<div align="center">
+
 
 </div>
 
